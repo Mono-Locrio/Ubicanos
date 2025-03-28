@@ -1,8 +1,51 @@
-<div style="position: relative; width: 100%; height: 0; padding-top: 141.4286%;
- padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-    src="https://www.canva.com/design/DAGi5h2zli4/1PnFiYdOK67a7vuTbh_fzA/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manu Mono Locrio</title>
+</head>
+    <style>
+  .canva-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Ajusta este valor si es necesario */
+    margin: auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(63, 69, 81, 0.16);
+  }
+
+  .canva-container::before {
+    content: "";
+    display: block;
+    padding-top: 141.4286%; /* Mantiene la relación de aspecto */
+  }
+
+  .canva-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  @media (max-width: 600px) {
+    .canva-container {
+      max-width: 100%;
+    }
+  }
+</style>
+<body>
+
+    <div class="canva-container">
+    <iframe 
+    loading="lazy"
+    src="https://www.canva.com/design/DAGi5h2zli4/1PnFiYdOK67a7vuTbh_fzA/view?embed"
+    allowfullscreen
+    class="canva-iframe">
   </iframe>
 </div>
-<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGi5h2zli4&#x2F;1PnFiYdOK67a7vuTbh_fzA&#x2F;view?utm_content=DAGi5h2zli4&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Baby Taylor Finn</a> de Don Aroche
+</body>
+</html>
